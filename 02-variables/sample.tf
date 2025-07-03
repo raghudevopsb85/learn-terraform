@@ -76,3 +76,7 @@ output "x3_env" {
   value = var.x3_env
 }
 
+# File name has to be different, but the file needs to be loaded automatically, then auto.tfvars
+variable "x4" {}
+
+
