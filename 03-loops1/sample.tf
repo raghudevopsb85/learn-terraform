@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "web-${count.index}"
+    Name = "web-${count.index +1}"
   }
 }
 
