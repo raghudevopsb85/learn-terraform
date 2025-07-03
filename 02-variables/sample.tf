@@ -72,5 +72,7 @@ variable "x2" {}
 # dev.tfvars, prod.tfvars -> this needs to be exclusively passed with -var-file from cli
 variable "x3_env" {}
 
-
+output "x3_env" {
+  value = var.x3_env
+}
 
