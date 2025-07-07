@@ -18,3 +18,7 @@ output "secret" {
   sensitive = true
 }
 
+resource "local_file" "foo" {
+  content  = data.vault_generic_secret.sample
+  filename = "/tmp/secret"
+}
