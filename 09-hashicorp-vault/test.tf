@@ -1,4 +1,4 @@
-data "vault_generic_secret" "rundeck_auth" {
+data "vault_generic_secret" "sample" {
   path = "kv/demo"
 }
 
@@ -13,4 +13,7 @@ provider "vault" {
 
 variable "token" {}
 
+output "secret" {
+  value = data.vault_generic_secret.sample
+}
 
